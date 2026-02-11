@@ -1,0 +1,128 @@
+body {
+  font-family: 'Scheherazade New', serif;
+  margin: 0;
+  background-color: #fdfdfd;
+}
+
+.container {
+  width: 748px;
+  height: 842px;
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar */
+.top-bar {
+  background: linear-gradient(90deg, #ff7f00, #ffb347);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 4px solid #333;
+}
+.left-buttons button {
+  margin-right: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.right-title h1 {
+  margin: 0;
+  font-weight: bold;
+}
+.right-title p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  flex: 1;
+}
+.filter {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.filter button {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.filter button:hover {
+  background: #555;
+}
+.filter ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.filter ul li {
+  background: #ddd;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+.hidden {
+  display: none;
+}
+
+.resources {
+  width: 70%;
+  background: #ffe0b2;
+  border-left: 4px dashed #ff7f00; /* doodle vibe */
+  padding: 20px;
+}
+.resources h2 {
+  margin-top: 0;
+}
+.resources label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.resources input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.filters {
+  margin-top: 15px;
+}
+.filters span {
+  background: #fff;
+  border: 2px dotted #ff7f00;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.filters span:hover {
+  transform: scale(1.1);
+  background: #ffefcc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #eee;
+  font-size: 0.8em;
+}
